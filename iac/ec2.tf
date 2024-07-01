@@ -9,3 +9,4 @@ resource "aws_instance" "ec2_challenge_devops" {
   }
 }
 
+
