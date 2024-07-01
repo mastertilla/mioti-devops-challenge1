@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bucket" {
-  bucket = "mioti-challenge1"
+  bucket = var.s3_bucket_name
 }
 
 resource "aws_s3_bucket_public_access_block" "s3_access" {
