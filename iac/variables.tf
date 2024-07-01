@@ -26,7 +26,7 @@ variable "db_instance_class" {
 
 variable "db_engine_version" {
   description = "The version of the database engine"
-  default     = "14.2"
+  default     = "13.4"
 }
 
 variable "db_name" {
