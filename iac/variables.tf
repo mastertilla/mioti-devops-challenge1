@@ -36,7 +36,7 @@ variable "db_name" {
 
 variable "db_username" {
   description = "The username for the RDS database"
-  default     = "admin"
+  default     = "dbadmin"
 }
 
 variable "db_password" {
