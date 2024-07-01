@@ -6,7 +6,7 @@ variable "region" {
 
 variable "s3_bucket_name" {
   description = "The name of the S3 bucket"
-  default     = "mioti-challenge1"
+  default     = "devops-mioti-jsina"
 }
 
 variable "instance_type" {
