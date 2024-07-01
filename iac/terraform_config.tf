@@ -14,10 +14,5 @@ terraform {
 
 provider "aws" {
   region = var.region
-  default_tags {
-    tags = {
-      Project    = "sentisis-data-ingestion"
-      DeployTool = "terraform"
-    }
-  }
+
 }

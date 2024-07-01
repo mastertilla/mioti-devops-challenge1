@@ -1,7 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "devops-mioti"
+    bucket = "mioti-bucket"
     key    = "tf-state"
-    region = "eu-west-1"
+    region = "us-east-1"
   }
 }
+
