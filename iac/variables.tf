@@ -21,12 +21,12 @@ variable "ami_id" {
 
 variable "db_instance_class" {
   description = "The class of the RDS instance"
-  default     = "db.t2.small"
+  default     = "db.t2.micro"
 }
 
 variable "db_engine_version" {
   description = "The version of the database engine"
-  default     = "9.6.6"
+  default     = "15.7"
 }
 
 variable "db_name" {
