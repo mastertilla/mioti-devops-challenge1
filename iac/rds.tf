@@ -1,7 +1,7 @@
 resource "aws_db_instance" "rds_challenge_devops" {
   allocated_storage    = 10
   storage_type         = "gp2"
-  engine               = "postgres"
+  engine               = "postgresql"
   engine_version       = var.db_engine_version
   instance_class       = var.db_instance_class
   db_name                 = var.db_name
