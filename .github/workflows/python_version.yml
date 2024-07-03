@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  check-python-version:
+  python-version-check:
     runs-on: ubuntu-latest
 
     steps:
