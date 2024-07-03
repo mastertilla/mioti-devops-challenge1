@@ -30,4 +30,4 @@ jobs:
       run: python --version
 
     - name: Run Pytest
-      run: python main_test.py  
+      run: pytest  
