@@ -27,4 +27,4 @@ jobs:
         pip install -r requirements.txt
 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag docker-Pepe:Version1
+      run: docker build . --file Dockerfile --tag docker-Pepe:Version1 .
