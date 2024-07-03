@@ -1,7 +1,9 @@
 resource "aws_s3_bucket" "bucket" {
-  bucket = "mioti-challenge1"
+  bucket = "mioti-challenge1-jmcc"
+  tags = { Name = "Challenge DevOps s3"
+    Enviroment = "Dev"
+  }
 }
-
 resource "aws_s3_bucket_public_access_block" "s3_access" {
   bucket                  = aws_s3_bucket.bucket.id
   block_public_acls       = true
@@ -9,3 +11,5 @@ resource "aws_s3_bucket_public_access_block" "s3_access" {
   ignore_public_acls      = true
   restrict_public_buckets = true
 }
+
+
