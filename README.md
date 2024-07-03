@@ -38,3 +38,28 @@ Finally, you can apply the deployment:
 ```bash
 terraform apply plan.out
 ```
+
+## Challenge 2
+
+The next challenge is to build 2 CI/CD pipelines using GitHub Actions:
+
+1. The first pipeline should run on every push to the `main` branch and run the tests as `pytest`.
+2. The second one should run on every push to the `main` branch and build and push the docker image.
+
+### Running the tests
+
+To run the tests, you can use the following command:
+
+```bash
+pytest
+```
+
+### Running Docker Image
+To build the image, you can use the following command:
+
+```bash
+docker build -t challenge2:dev .
+```
+
+**EXTRA**
+For extra points, you can deploy the image to a container registry (dockerhub).
