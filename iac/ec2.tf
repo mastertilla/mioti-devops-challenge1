@@ -1,3 +1,4 @@
+resource "aws_instance" "ec2-challenge-devops" {
   ami           = "ami-0776c814353b4814d"
   instance_type = "t2.micro"
   root_block_device {
