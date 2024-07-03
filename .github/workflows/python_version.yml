@@ -11,7 +11,7 @@ on:
 jobs:
   python-version-check:
     runs-on: ubuntu-latest
-
+ 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
@@ -28,3 +28,6 @@ jobs:
 
     - name: Display Python version
       run: python --version
+
+    - name: Run Pytest
+      run: pytest  
