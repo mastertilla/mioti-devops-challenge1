@@ -1,5 +1,10 @@
 resource "aws_s3_bucket" "bucket" {
-  bucket = "mioti-challenge1"
+  bucket = "challenge-devops-santiagogz"
+
+  tags = {
+    Name = "Challenge DevOps s3"
+    Env  = "Dev"
+  }
 }
 
 resource "aws_s3_bucket_public_access_block" "s3_access" {
