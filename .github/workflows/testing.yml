@@ -27,4 +27,4 @@ jobs:
         pip install -r requirements.txt
 
     - name: Display Test version
-      run: main_test.py
+      run: pytest

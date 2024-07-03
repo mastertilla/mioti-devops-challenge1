@@ -21,4 +21,4 @@ jobs:
       
 
     - name: Display Docker version
-      run: docker build -t api:test
+      run: docker buildx build -t api:test
