@@ -1,5 +1,4 @@
-name: Python Version Check
-
+name: Testing
 on:
   push:
     branches:
@@ -9,7 +8,7 @@ on:
       - main
 
 jobs:
-  check-python-version:
+  check-testing:
     runs-on: ubuntu-latest
 
     steps:
