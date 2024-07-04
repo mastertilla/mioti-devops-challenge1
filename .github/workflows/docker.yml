@@ -39,6 +39,6 @@ jobs:
         pip install -r requirements.txt
 
     - name: Build Docker image
-      run: docker build -it api:marta . 
+      run: docker build -t api:marta . 
 
 
