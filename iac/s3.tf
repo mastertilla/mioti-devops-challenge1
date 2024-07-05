@@ -1,5 +1,9 @@
 resource "aws_s3_bucket" "bucket" {
-  bucket = "mioti-challenge1"
+  bucket = "mioti-challenge1-pmm"
+  tags = {
+    Name        = "Challenge DevOps S3"
+    Environment = "Dev"
+  }
 }
 
 resource "aws_s3_bucket_public_access_block" "s3_access" {
